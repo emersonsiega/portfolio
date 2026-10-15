@@ -1,0 +1,14 @@
+{
+  "name": "Emerson Siega",
+  "photo": {
+    "fallback": "avatar.jpg"
+  },
+  "title": "Senior Flutter Engineer",
+  "headlineTitle": "I build software that is *simple*, useful, and made to last.",
+  "headlineText": "Hello, I’m Emerson — a Brazilian Senior Flutter Engineer with over 16 years of experience, focused on building reliable digital products, thoughtful architectures, and experiences that feel effortless to use.",
+  "aboutTitle": "Engineering thoughtful products with purpose.",
+  "aboutDescription": "I’m passionate about turning complex problems into clear, maintainable software. I work across product and engineering to shape Flutter apps that are technically sound and genuinely useful.\n\nI care about clean architecture, collaborative teams, and the details that make products dependable. My favorite work pairs pragmatic decisions with high standards for quality.",
+  "ctaLabel": "Explore my work",
+  "footerTitle": "Let’s work together.",
+  "footerLinkLabel": "Get in touch"
+}

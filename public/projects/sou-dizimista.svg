@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Sou Dizimista">
+  <rect width="128" height="128" rx="28" fill="#F4C430"/>
+  <path fill="#E63946" d="M64 96c-1.4 0-2.7-.5-3.7-1.5C46 80.7 36 70.6 36 59.2 36 50.2 43 44 51.4 44c5 0 9.4 2.3 12.6 6.1C67.2 46.3 71.6 44 76.6 44 85 44 92 50.2 92 59.2c0 11.4-10 21.5-24.3 35.3-1 .99-2.3 1.5-3.7 1.5z"/>
+  <path fill="none" stroke="#E63946" stroke-width="6" stroke-linecap="round" d="M40 86c8 8 16 12 24 12s16-4 24-12"/>
+</svg>

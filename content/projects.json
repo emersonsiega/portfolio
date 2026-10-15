@@ -1,0 +1,137 @@
+{
+  "label": "Selected work",
+  "title": "A few things I’ve brought to life.",
+  "items": [
+    {
+      "name": "PRADA",
+      "start": "2026-02",
+      "area": "e-commerce",
+      "tech": ["Flutter"],
+      "description": "Description coming soon",
+      "link": {
+        "href": "https://apps.apple.com/us/app/prada/id6762136238"
+      },
+      "thumbnail": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e8/8c/95/e88c9599-7a01-a931-85a5-7074a95ffbbb/AppIcon-1x_U007emarketing-0-7-0-85-220-0.png/512x512bb.jpg"
+      },
+      "accent": "#6d4aff"
+    },
+    {
+      "name": "Tissue Health Plus",
+      "start": "2025-05",
+      "end": "2025-12",
+      "area": "Healthcare",
+      "tech": ["Flutter"],
+      "description": "Description coming soon",
+      "link": {
+        "href": "https://apps.apple.com/us/app/thp-clinical-app/id6744620171"
+      },
+      "thumbnail": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/95/8c/8d958c8e-8062-79f1-1643-97c3bbf3081d/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg"
+      },
+      "accent": "#8066e9"
+    },
+    {
+      "name": "Genial Investimentos",
+      "start": "2021-03",
+      "end": "2025-05",
+      "area": "Investments",
+      "tech": ["Flutter"],
+      "description": "Description coming soon",
+      "link": {
+        "href": "https://play.google.com/store/apps/details?id=com.br.GeraTech.Genial.NovaPlataforma&hl=en&gl=US"
+      },
+      "thumbnail": {
+        "file": "projects/genial.webp"
+      },
+      "accent": "#5940bd"
+    },
+    {
+      "name": "MZIC",
+      "start": "2023-10",
+      "end": "2024-12",
+      "area": "Investments · Music",
+      "tech": ["Flutter"],
+      "description": "Description coming soon",
+      "link": {
+        "href": "https://apps.apple.com/br/app/mzic/id1670495038"
+      },
+      "thumbnail": {
+        "url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/c9/00/dcc90075-8948-42ae-96d7-650ec273f7c8/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg"
+      },
+      "accent": "#947ee8"
+    },
+    {
+      "name": "Finclass",
+      "start": "2020-07",
+      "end": "2021-03",
+      "area": "Financial education · Streaming",
+      "tech": ["Flutter"],
+      "description": "Description coming soon",
+      "link": {
+        "href": "https://play.google.com/store/apps/details?id=com.finclass.app"
+      },
+      "thumbnail": {
+        "url": "https://ugc.production.linktr.ee/c6cfa329-9f48-474c-8099-b1ac9f37098b_image.png?io=true&size=thumbnail-stack_v1_0"
+      },
+      "accent": "#6d4aff"
+    },
+    {
+      "name": "Sou Dizimista",
+      "start": "2019-03",
+      "end": "2020-07",
+      "area": "Religious · Donation platform",
+      "tech": ["Flutter"],
+      "description": "Description coming soon",
+      "link": {
+        "href": "https://play.google.com/store/apps/details?id=br.com.dizimofiel.soudizimista.mobile&hl=pt"
+      },
+      "thumbnail": {
+        "url": "https://ugc.production.linktr.ee/1v150i19QiKfbdr6vMLk_unnamed%20(1).webp?io=true&size=thumbnail-stack_v1_0"
+      },
+      "accent": "#5940bd"
+    },
+    {
+      "name": "Ad Gentes",
+      "start": "2019-03",
+      "end": "2020-07",
+      "area": "Social media · Religious",
+      "tech": ["Flutter"],
+      "description": "Description coming soon",
+      "thumbnail": {
+        "url": "https://ugc.production.linktr.ee/Duo1iIbS76guJtAbYLPt_unnamed.png?io=true&size=thumbnail-stack_v1_0"
+      },
+      "accent": "#8066e9"
+    },
+    {
+      "name": "DízimoFiel",
+      "start": "2019-03",
+      "end": "2020-07",
+      "area": "Finances · Church management",
+      "tech": ["Ionic", "Angular 5"],
+      "description": "Description coming soon",
+      "link": {
+        "href": "https://play.google.com/store/apps/details?id=br.com.dizimofiel.dizimofiel.android&hl=en"
+      },
+      "thumbnail": {
+        "url": "https://play-lh.googleusercontent.com/9WCUFMiggxsXbVPwH5TQ7971SRSHovmWoQVZt0fCmb0kiQ0wYCR_pSVZT3OJ23VSaZ27OKwDE_6tNzKPCTT7ycY"
+      },
+      "accent": "#6d4aff"
+    },
+    {
+      "name": "CISSBox",
+      "start": "2017-03",
+      "end": "2019-02",
+      "area": "POS · Embedded",
+      "tech": ["C++", "Qt Creator", "Raspberry Pi"],
+      "description": "Description coming soon",
+      "link": {
+        "href": "https://ciss-com-br.translate.goog/cissbox?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en"
+      },
+      "thumbnail": {
+        "file": "projects/cissbox.png"
+      },
+      "accent": "#947ee8"
+    }
+  ]
+}

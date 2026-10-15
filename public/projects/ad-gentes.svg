@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Ad Gentes">
+  <rect width="128" height="128" rx="28" fill="#F4F6FB"/>
+  <g transform="translate(64 64)">
+    <circle cx="0" cy="-28" r="16" fill="#2BB673"/>
+    <circle cx="24" cy="-14" r="16" fill="#F4C430"/>
+    <circle cx="24" cy="14" r="16" fill="#E85D04"/>
+    <circle cx="0" cy="28" r="16" fill="#2A9D8F"/>
+    <circle cx="-24" cy="14" r="16" fill="#3A86FF"/>
+    <circle cx="-24" cy="-14" r="16" fill="#7B2CBF"/>
+    <circle cx="0" cy="0" r="14" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "eyebrow": "Let’s connect",
+  "title": "Find me here",
+  "description": "Open to collaborations, thoughtful conversations, and coffee.",
+  "items": [
+    {
+      "type": "email",
+      "label": "Email",
+      "value": "emersonsiega@gmail.com",
+      "href": "mailto:emersonsiega@gmail.com"
+    },
+    {
+      "type": "whatsapp",
+      "label": "WhatsApp",
+      "value": "+55 (46) 99912-5168",
+      "href": "https://wa.me/5546999125168"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "value": "/in/emersonsiega",
+      "href": "https://www.linkedin.com/in/emersonsiega/"
+    }
+  ]
+}
