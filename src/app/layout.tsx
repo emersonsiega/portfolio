@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { DM_Sans, Playfair_Display } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { getConnect, getProfile } from "@/lib/content";
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
