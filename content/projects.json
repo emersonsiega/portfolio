@@ -1,13 +1,23 @@
 {
   "label": "Selected work",
   "title": "A few things I’ve brought to life.",
+  "more": {
+    "title": "And there’s more...",
+    "description": "These are just some of the projects I’ve helped bring to life throughout my career. For a complete overview of my experience, take a look at my CV.",
+    "linkLabel": "View my CV"
+  },
   "items": [
     {
       "name": "PRADA",
       "start": "2026-02",
       "area": "e-commerce",
-      "tech": ["Flutter"],
-      "description": "Description coming soon",
+      "tech": ["Flutter", "Cubit", "Contentful CMS", "Algolia", "GraphQL"],
+      "description": "A luxury e-commerce application designed to deliver a premium shopping experience, allowing customers to explore Prada's collections, discover products, and shop through a seamless, personalized digital experience.",
+      "keyContributions": [
+        "Enhanced several screens by integrating CMS-driven content to deliver a richer, more dynamic shopping experience.",
+        "Implemented Algolia integrations to enable fast, efficient product discovery and search.",
+        "Led cross-team collaboration with the CMS team to improve content management capabilities and streamline content delivery."
+      ],
       "link": {
         "href": "https://apps.apple.com/us/app/prada/id6762136238"
       },
@@ -17,12 +27,15 @@
       "accent": "#6d4aff"
     },
     {
-      "name": "Tissue Health Plus",
+      "name": "THP Clinical App",
       "start": "2025-05",
       "end": "2025-12",
       "area": "Healthcare",
-      "tech": ["Flutter"],
-      "description": "Description coming soon",
+      "tech": ["Flutter", "Riverpod", "gRPC"],
+      "description": "The Tissue Health Plus' healthcare application designed to support wound care management, enabling healthcare professionals to monitor patient progress, document treatments, and collaborate remotely to improve care coordination and patient outcomes.",
+      "keyContributions": [
+        "Implemented Zoom VideoSDK integration, allowing app‑to‑app video calls using CallKit and PushKit on iOS."
+      ],
       "link": {
         "href": "https://apps.apple.com/us/app/thp-clinical-app/id6744620171"
       },
@@ -33,11 +46,17 @@
     },
     {
       "name": "Genial Investimentos",
+      "featured": true,
       "start": "2021-03",
       "end": "2025-05",
       "area": "Investments",
-      "tech": ["Flutter"],
-      "description": "Description coming soon",
+      "tech": ["Flutter", "Cubit","Micro‑frontends", "Clean Architecture"],
+      "description": "A financial platform that enables users to invest in a wide range of financial assets, offering a seamless experience for managing investments and accessing financial services.",
+      "keyContributions": [
+        "Played a key role in building Genial Investimentos' flagship Flutter application from the ground up, contributing to major architectural decisions and its long-term evolution.",
+        "Helped design and implement a scalable micro-frontends architecture based on Clean Architecture principles.",
+        "Served as the primary code reviewer for a large team of Flutter engineers, mentoring developers and establishing engineering standards to ensure code quality and architectural consistency."
+      ],
       "link": {
         "href": "https://play.google.com/store/apps/details?id=com.br.GeraTech.Genial.NovaPlataforma&hl=en&gl=US"
       },
@@ -51,8 +70,11 @@
       "start": "2023-10",
       "end": "2024-12",
       "area": "Investments · Music",
-      "tech": ["Flutter"],
-      "description": "Description coming soon",
+      "tech": ["Flutter", "HLS"],
+      "description": "An innovative fintech platform that connects the music and investment industries, enabling users to invest in tokenized music rights, earn royalties, and manage their music investment portfolios.",
+      "keyContributions": [
+        "Developed an in-app music player supporting HLS (HTTP Live Streaming) audio playback with synchronized background video."
+      ],
       "link": {
         "href": "https://apps.apple.com/br/app/mzic/id1670495038"
       },
@@ -66,8 +88,13 @@
       "start": "2020-07",
       "end": "2021-03",
       "area": "Financial education · Streaming",
-      "tech": ["Flutter"],
-      "description": "Description coming soon",
+      "tech": ["Flutter", "MobX"],
+      "description": "A financial education streaming platform that helps users improve their financial knowledge and investment skills through expert-led video courses, documentaries, and exclusive educational content, making financial education accessible to investors of all experience levels.",
+      "keyContributions": [
+        "Implemented the application's Design System.",
+        "Contributed to the application's foundational architecture.",
+        "Implemented a DRM-protected video player to enable secure playback of premium educational content."
+      ],
       "link": {
         "href": "https://play.google.com/store/apps/details?id=com.finclass.app"
       },
@@ -77,12 +104,16 @@
       "accent": "#6d4aff"
     },
     {
-      "name": "Sou Dizimista",
+      "name": "SouDizimista",
       "start": "2019-03",
       "end": "2020-07",
       "area": "Religious · Donation platform",
-      "tech": ["Flutter"],
-      "description": "Description coming soon",
+      "tech": ["Flutter", "React", "Cubit", "OneSignal"],
+      "description": "A digital giving platform that enables church members to make tithes and donations securely using credit cards, as part of a broader church management ecosystem.",
+      "keyContributions": [
+        "Led the development of the Flutter application, delivering a seamless and intuitive digital donation experience.",
+        "Developed a React-based web payment flow integrated into the iOS application through a WebView to accommodate Apple's payment restrictions while maintaining a consistent user experience."
+      ],
       "link": {
         "href": "https://play.google.com/store/apps/details?id=br.com.dizimofiel.soudizimista.mobile&hl=pt"
       },
@@ -95,9 +126,14 @@
       "name": "Ad Gentes",
       "start": "2019-03",
       "end": "2020-07",
-      "area": "Social media · Religious",
-      "tech": ["Flutter"],
-      "description": "Description coming soon",
+      "area": "Social network · Religious",
+      "tech": ["Flutter", "Java", "Quarkus", "AWS"],
+      "description": "A social networking platform that connects missionaries around the world, enabling them to share experiences, engage with communities, and collaborate on charitable initiatives.\n\nThe app was removed from app stores following the conclusion of the National Missionary Campaign (2019–2023).",
+      "keyContributions": [
+        "Led the development of the Flutter application, implementing it from the ground up and mentoring other developers.",
+        "Designed and developed backend services using Java and the Quarkus framework.",
+        "Set up and managed the production infrastructure on AWS, leveraging ECS, ECR, RDS, and S3 for application deployment, database management, and media storage."
+      ],
       "thumbnail": {
         "url": "https://ugc.production.linktr.ee/Duo1iIbS76guJtAbYLPt_unnamed.png?io=true&size=thumbnail-stack_v1_0"
       },
@@ -108,13 +144,17 @@
       "start": "2019-03",
       "end": "2020-07",
       "area": "Finances · Church management",
-      "tech": ["Ionic", "Angular 5"],
-      "description": "Description coming soon",
+      "tech": ["Ionic 3", "Angular 5", "Java", "WildFly Swarm"],
+      "description": "A church management application designed to help local church administrators manage tithes, track contributions, and streamline financial administration as part of a broader church management ecosystem.",
+      "keyContributions": [
+        "Developed new features and maintained the Ionic 3 mobile application, improving functionality and resolving bugs.",
+        "Contributed to the full-stack development and maintenance of the platform, working with Java (WildFly Swarm) backend services and an Angular 5 web application."
+      ],
       "link": {
         "href": "https://play.google.com/store/apps/details?id=br.com.dizimofiel.dizimofiel.android&hl=en"
       },
       "thumbnail": {
-        "url": "https://play-lh.googleusercontent.com/9WCUFMiggxsXbVPwH5TQ7971SRSHovmWoQVZt0fCmb0kiQ0wYCR_pSVZT3OJ23VSaZ27OKwDE_6tNzKPCTT7ycY"
+        "file": "projects/dizimofiel.png"
       },
       "accent": "#6d4aff"
     },
@@ -123,8 +163,13 @@
       "start": "2017-03",
       "end": "2019-02",
       "area": "POS · Embedded",
-      "tech": ["C++", "Qt Creator", "Raspberry Pi"],
-      "description": "Description coming soon",
+      "tech": ["C++", "Qt Creator", "Raspberry Pi", "Jenkins"],
+      "description": "An embedded Point of Sale (POS) solution built for Raspberry Pi devices, enabling retailers to process transactions, manage payments, and ensure reliable checkout operations.",
+      "keyContributions": [
+        "Implemented integrations with payment platforms to enable seamless transaction processing.",
+        "Designed and implemented a transaction recovery mechanism, allowing the application to restart and resume interrupted purchases without losing their state.",
+        "Developed unit tests and improved CI pipelines using Jenkins to enhance code quality and development efficiency."
+      ],
       "link": {
         "href": "https://ciss-com-br.translate.goog/cissbox?_x_tr_sl=pt&_x_tr_tl=en&_x_tr_hl=en"
       },

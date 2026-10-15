@@ -37,7 +37,7 @@ export default async function Home() {
         <AboutSection profile={profile} />
         <ContactSection connect={connect} />
         {hasCv(cv) ? <CvBanner cv={cv} /> : null}
-        <Portfolio projects={projects} />
+        <Portfolio projects={projects} cv={cv} />
       </main>
       <SiteFooter profile={profile} emailHref={emailHref(connect)} />
     </div>

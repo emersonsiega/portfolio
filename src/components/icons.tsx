@@ -2,15 +2,15 @@ import type { ReactNode } from "react";
 
 export type IconName =
   | "arrow"
+  | "chevron"
   | "download"
   | "email"
   | "file"
-  | "grid"
   | "linkedin"
   | "moon"
   | "phone"
-  | "sun"
-  | "timeline";
+  | "star"
+  | "sun";
 
 const paths: Record<IconName, ReactNode> = {
   arrow: (
@@ -19,6 +19,7 @@ const paths: Record<IconName, ReactNode> = {
       <path d="m13 6 6 6-6 6" />
     </>
   ),
+  chevron: <path d="m6 9 6 6 6-6" />,
   download: (
     <>
       <path d="M12 3v12" />
@@ -38,14 +39,6 @@ const paths: Record<IconName, ReactNode> = {
       <path d="M14 2v6h6M8 13h8M8 17h6" />
     </>
   ),
-  grid: (
-    <>
-      <rect x="4" y="4" width="6" height="6" rx="1" />
-      <rect x="14" y="4" width="6" height="6" rx="1" />
-      <rect x="4" y="14" width="6" height="6" rx="1" />
-      <rect x="14" y="14" width="6" height="6" rx="1" />
-    </>
-  ),
   linkedin: (
     <>
       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z" />
@@ -57,18 +50,17 @@ const paths: Record<IconName, ReactNode> = {
   phone: (
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.3 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z" />
   ),
+  star: (
+    <path
+      d="M12 3.2 14.4 9l6.2.5-4.7 3.9 1.5 6-5.4-3.3-5.4 3.3 1.5-6-4.7-3.9 6.2-.5Z"
+      fill="currentColor"
+      stroke="none"
+    />
+  ),
   sun: (
     <>
       <circle cx="12" cy="12" r="4" />
       <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.41M17.66 6.34l1.41-1.41" />
-    </>
-  ),
-  timeline: (
-    <>
-      <path d="M8 5h12M8 12h12M8 19h12" />
-      <circle cx="4" cy="5" r="1" />
-      <circle cx="4" cy="12" r="1" />
-      <circle cx="4" cy="19" r="1" />
     </>
   ),
 };

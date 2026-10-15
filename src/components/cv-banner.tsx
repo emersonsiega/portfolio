@@ -17,7 +17,12 @@ export function CvBanner({ cv }: { cv: CvContent }) {
       </div>
       <div className="cv-actions">
         {cv.view ? (
-          <a href={cv.view.href} target="_blank" rel="noopener noreferrer">
+          <a
+            href={cv.view.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            type="application/pdf"
+          >
             {cv.view.label} <Icon name="arrow" size={19} />
           </a>
         ) : null}

@@ -1,19 +1,39 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, type MouseEvent } from "react";
 import { Icon } from "@/components/icons";
 import { ProjectCard } from "@/components/project-card";
 import { ProjectIcon } from "@/components/project-icon";
-import type { ProjectsContent } from "@/lib/content";
+import type { CvContent, ProjectsContent } from "@/lib/content";
 import { sortProjects } from "@/lib/dates";
 
-type ViewMode = "list" | "timeline";
+function scrollToProject(event: MouseEvent<HTMLAnchorElement>, id: string) {
+  const target = document.getElementById(id);
+  if (!target) return;
 
-export function Portfolio({ projects }: { projects: ProjectsContent }) {
-  const [view, setView] = useState<ViewMode>("timeline");
+  event.preventDefault();
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  target.scrollIntoView({
+    behavior: reduceMotion ? "auto" : "smooth",
+    block: "start",
+  });
+  history.replaceState(null, "", `#${id}`);
+}
+
+export function Portfolio({
+  projects,
+  cv,
+}: {
+  projects: ProjectsContent;
+  cv: CvContent;
+}) {
   const ordered = useMemo(
     () => sortProjects(projects.items, "newest"),
     [projects.items],
+  );
+  const featured = useMemo(
+    () => ordered.find((project) => project.featured),
+    [ordered],
   );
 
   if (projects.items.length === 0) {
@@ -31,45 +51,68 @@ export function Portfolio({ projects }: { projects: ProjectsContent }) {
             </div>
           ) : null}
           {projects.title ? <h2>{projects.title}</h2> : null}
-        </div>
-        <div className="view-switcher" aria-label="Project display options">
-          <button
-            type="button"
-            className={view === "list" ? "active" : ""}
-            onClick={() => setView("list")}
-            aria-pressed={view === "list"}
-          >
-            <Icon name="grid" size={17} /> List
-          </button>
-          <button
-            type="button"
-            className={view === "timeline" ? "active" : ""}
-            onClick={() => setView("timeline")}
-            aria-pressed={view === "timeline"}
-          >
-            <Icon name="timeline" size={17} /> Timeline
-          </button>
+          {featured ? (
+            <a
+              className="featured-jump"
+              href={`#${featured.id}`}
+              onClick={(event) => scrollToProject(event, featured.id)}
+            >
+              <Icon name="star" size={12} />
+              Jump to featured project: {featured.name}
+              <span aria-hidden="true">↘</span>
+            </a>
+          ) : null}
         </div>
       </div>
 
-      {view === "list" ? (
-        <div className="project-list">
-          {ordered.map((project) => (
-            <ProjectCard key={project.id} project={project} timeline={false} />
-          ))}
-        </div>
-      ) : (
-        <div className="project-timeline">
-          {ordered.map((project) => (
-            <div className="timeline-entry" key={project.id}>
-              <div className="timeline-icon">
-                <ProjectIcon project={project} />
-              </div>
-              <ProjectCard project={project} timeline />
+      <div className="project-timeline">
+        {ordered.map((project) => (
+          <div className="timeline-entry" key={project.id}>
+            <div className="timeline-icon">
+              <ProjectIcon project={project} />
             </div>
-          ))}
-        </div>
-      )}
+            <ProjectCard project={project} />
+          </div>
+        ))}
+        {projects.more ? <TimelineMore more={projects.more} cv={cv} /> : null}
+      </div>
     </section>
+  );
+}
+
+function TimelineMore({
+  more,
+  cv,
+}: {
+  more: NonNullable<ProjectsContent["more"]>;
+  cv: CvContent;
+}) {
+  const cvLink = cv.view ?? cv.download;
+
+  return (
+    <div className="timeline-entry timeline-more">
+      <div className="timeline-more-node" aria-hidden="true">
+        <span />
+      </div>
+      <div className="timeline-more-copy">
+        <h3>{more.title}</h3>
+        {more.description ? <p>{more.description}</p> : null}
+        {cvLink ? (
+          <a
+            className="timeline-more-link"
+            href={cvLink.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            type="application/pdf"
+          >
+            <span className="timeline-more-mark">
+              <Icon name="file" size={15} />
+            </span>
+            {more.linkLabel ?? cvLink.label}
+            <Icon name="arrow" size={16} />
+          </a>
+        ) : null}
+      </div>
+    </div>
   );
 }

@@ -3,11 +3,11 @@
   "photo": {
     "fallback": "avatar.jpg"
   },
-  "title": "Senior Flutter Engineer",
+  "title": "Senior Software Engineer",
   "headlineTitle": "I build software that is *simple*, useful, and made to last.",
-  "headlineText": "Hello, I’m Emerson — a Brazilian Senior Flutter Engineer with over 16 years of experience, focused on building reliable digital products, thoughtful architectures, and experiences that feel effortless to use.",
+  "headlineText": "Hello, I’m Emerson — a Brazilian Senior Software Engineer with over 16 years of experience, focused on building reliable digital products, thoughtful architectures, and experiences that feel effortless to use.",
   "aboutTitle": "Engineering thoughtful products with purpose.",
-  "aboutDescription": "I’m passionate about turning complex problems into clear, maintainable software. I work across product and engineering to shape Flutter apps that are technically sound and genuinely useful.\n\nI care about clean architecture, collaborative teams, and the details that make products dependable. My favorite work pairs pragmatic decisions with high standards for quality.",
+  "aboutDescription": "I’ve been building software across mobile, backend, frontend, and embedded systems. Since 2019, I've specialized in Flutter, delivering scalable, high-performance mobile applications for companies in industries including finance, luxury retail, healthcare, and education.\n\nMy background in backend, frontend, and embedded systems allows me to look beyond the mobile application itself. I enjoy designing scalable architectures, integrating mobile apps with complex ecosystems, and building solutions that remain maintainable as products and teams grow.",
   "ctaLabel": "Explore my work",
   "footerTitle": "Let’s work together.",
   "footerLinkLabel": "Get in touch"

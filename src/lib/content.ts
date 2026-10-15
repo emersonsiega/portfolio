@@ -60,19 +60,28 @@ export type Project = {
   id: string;
   name: string;
   initials: string;
+  featured?: boolean;
   startDate?: string;
   endDate?: string | null;
   area?: string;
   tech: string[];
   description?: string;
+  keyContributions: string[];
   link?: ProjectLink;
   thumbnailSources: string[];
   accent: string;
 };
 
+export type ProjectsMore = {
+  title: string;
+  description?: string;
+  linkLabel?: string;
+};
+
 export type ProjectsContent = {
   label?: string;
   title?: string;
+  more?: ProjectsMore;
   items: Project[];
 };
 
@@ -82,6 +91,14 @@ function text(value: unknown): string | undefined {
   if (typeof value !== "string") return undefined;
   const trimmed = value.trim();
   return trimmed.length > 0 ? trimmed : undefined;
+}
+
+function lines(value: unknown): string[] {
+  if (Array.isArray(value)) {
+    return value.map((item) => text(item)).filter((item): item is string => item !== undefined);
+  }
+
+  return text(value)?.split("\n").map((line) => line.trim()).filter(Boolean) ?? [];
 }
 
 function publicSrc(file: string): string {
@@ -308,14 +325,17 @@ export async function getProjects(): Promise<ProjectsContent> {
   const raw = projectsJson as {
     label?: string;
     title?: string;
+    more?: { title?: string; description?: string; linkLabel?: string };
     items?: {
       id?: string;
       name?: string;
+      featured?: boolean;
       start?: string;
       end?: string | null;
       area?: string;
       tech?: string[] | string;
       description?: string;
+      keyContributions?: string[] | string;
       link?: { href?: string; label?: string };
       thumbnail?: { url?: string; file?: string };
       accent?: string;
@@ -336,11 +356,13 @@ export async function getProjects(): Promise<ProjectsContent> {
         id: text(item.id) ?? slugFromName(name),
         name,
         initials: initialsFromName(name).slice(0, 1),
+        featured: item.featured === true,
         startDate: text(item.start),
         endDate: item.end === undefined ? undefined : text(item.end as string) ?? null,
         area: text(item.area),
         tech,
         description: text(item.description),
+        keyContributions: lines(item.keyContributions),
         link: href
           ? { href, label: projectLinkLabel(href, item.link?.label) }
           : undefined,
@@ -352,9 +374,18 @@ export async function getProjects(): Promise<ProjectsContent> {
     }),
   );
 
+  const moreTitle = text(raw.more?.title);
+
   return {
     label: text(raw.label),
     title: text(raw.title),
+    more: moreTitle
+      ? {
+          title: moreTitle,
+          description: text(raw.more?.description),
+          linkLabel: text(raw.more?.linkLabel),
+        }
+      : undefined,
     items: items.filter((item): item is Project => item !== undefined),
   };
 }
