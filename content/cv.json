@@ -1,12 +1,13 @@
 {
   "eyebrow": "The full story",
-  "title": "Experience, education & the details.",
+  "title": "The experience behind the work.",
+  "description": "Explore my complete professional background, education, and projects.",
   "view": {
     "label": "View CV",
     "href": "/emerson-siega-cv.pdf"
   },
   "download": {
-    "label": "Download",
+    "label": "Download CV",
     "href": "/emerson-siega-cv.pdf",
     "filename": "Emerson-Siega-CV.pdf"
   }

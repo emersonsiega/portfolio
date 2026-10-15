@@ -11,9 +11,10 @@ export function CvBanner({ cv }: { cv: CvContent }) {
       <div className="cv-mark" aria-hidden="true">
         <Icon name="file" size={29} />
       </div>
-      <div>
+      <div className="cv-copy">
         {cv.eyebrow ? <p className="eyebrow">{cv.eyebrow}</p> : null}
         {cv.title ? <h2 id="cv-heading">{cv.title}</h2> : null}
+        {cv.description ? <p>{cv.description}</p> : null}
       </div>
       <div className="cv-actions">
         {cv.view ? (
@@ -23,7 +24,7 @@ export function CvBanner({ cv }: { cv: CvContent }) {
             rel="noopener noreferrer"
             type="application/pdf"
           >
-            {cv.view.label} <Icon name="arrow" size={19} />
+            {cv.view.label} <Icon name="arrow-up-right" size={19} />
           </a>
         ) : null}
         {cv.download ? (

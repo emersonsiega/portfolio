@@ -47,6 +47,7 @@ export type CvAction = {
 export type CvContent = {
   eyebrow?: string;
   title?: string;
+  description?: string;
   view?: CvAction;
   download?: CvAction;
 };
@@ -284,6 +285,7 @@ export function getCv(): CvContent {
   const raw = cvJson as {
     eyebrow?: string;
     title?: string;
+    description?: string;
     view?: { label?: string; href?: string };
     download?: { label?: string; href?: string; filename?: string };
   };
@@ -291,6 +293,7 @@ export function getCv(): CvContent {
   return {
     eyebrow: text(raw.eyebrow),
     title: text(raw.title),
+    description: text(raw.description),
     view: cvAction(raw.view),
     download: cvAction(raw.download),
   };
